@@ -7,7 +7,7 @@ function compute()
     var year = new Date().getFullYear()+parseInt(years);
     
     //Validate value in principal input is greater than zero and calculate interest accordingly
-    if(principal.value <= 0)
+    if(principal.value <= 0 || principal.value == "")
     {
         alert("Enter a positive number");
         principal.focus();
